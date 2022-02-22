@@ -1,0 +1,16 @@
+.zoom-button {
+    position: absolute;
+    width: 50px;
+    height: 40px;
+    left: 8px;
+    top: 85%;
+    border: none;
+  }
+
+  .workflow-zoom {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .zoomout:hover {
+    filter: drop-shadow(16px 16px 20px red) invert(75%);
+  }

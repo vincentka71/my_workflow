@@ -1,0 +1,73 @@
+.preopspage {
+    width: 100%;
+    height: 100%;
+    /* width: 1440px; */
+    /* height: 1024px; */
+    position: fixed; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #E3FFFD;
+    min-height: 300px;    
+  }
+  
+  .content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .information-button {
+    position: absolute;
+    width: 50px;
+    height: 40px;
+    left: 10px;
+    top: 170px;
+    border: none;
+    background: #E3FFFD;
+  }
+  
+  .info:hover {
+    filter: drop-shadow(16px 16px 20px red) invert(75%);
+  }
+
+.preopsgeneral {
+  position: relative;
+  width: 90%;
+  left: 50px;
+  margin-right: auto;
+}
+
+.preops-image {
+  width: 100%; 
+  height: auto;
+}
+
+.preopsgeneral img {
+  width: 100%;
+  height: auto;
+} 
+
+.glassout-preops {
+  position: absolute;
+  background:#E3FFFD;
+  width: 50px;
+  height: 40px;
+  border: none;
+  top: 4%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  /* padding: 12px 24px; */
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.glassout:hover {
+  filter: drop-shadow(16px 16px 20px red) invert(75%);
+}
+

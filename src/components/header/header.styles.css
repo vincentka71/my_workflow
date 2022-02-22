@@ -1,0 +1,28 @@
+
+.header {
+    height: 168px;
+    width: 100%;
+    
+    /* background-color: #DE6161;  */ 
+}
+.title {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 70px;
+    text-align: center;
+    font-feature-settings: 'liga' off;
+    color: #DDE3ED;
+} 
+
+.subtitle {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 70px;
+    text-align: center;
+    font-feature-settings: 'liga' off;
+    color: #DDE3ED;
+}

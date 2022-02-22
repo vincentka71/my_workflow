@@ -1,25 +1,35 @@
-import logo from './logo.svg';
+import React from 'react';
+// import { connect } from 'react-redux';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import { Routes, Route } from 'react-router-dom';
 
-export default App;
+import './App.css';
+
+import HomePage from './pages/homepage/homepage.component';
+import GeneralPage from './pages/generalpage/generalpage.component';
+import ZoomPage from './pages/zoompage/zoompage.component'
+import ExploPage from './pages/explopage/explopage.component';
+import PreopsPage from './pages/preopspage/preops.component';
+import OpsPage from './pages/opspage/opspage.component';
+ 
+function App() {
+  
+    return (
+      <div>
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/generalpage' element={<GeneralPage />} />
+        <Route path='/zoomworkflow' element={<ZoomPage />} />
+        <Route path='/workflowexplo' element={<ExploPage />} />
+        <Route path='/workflowpreops' element={<PreopsPage />} />
+        <Route path='/workflowops' element={<OpsPage />} />
+        
+
+       { /* <Route path='/signin' element={SignInAndSignUpPage} /> */ }
+      </Routes>
+      </div>
+    );
+  }
+
+  export default App;
