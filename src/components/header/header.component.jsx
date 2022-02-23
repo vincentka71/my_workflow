@@ -8,10 +8,10 @@ const Header = ({title, subtitle, backgroundcolor}) => {
     return (
         <div className="header" style={{backgroundColor: backgroundcolor}} >
             <div className='title'>
-               {title}
+               <h1>{title}</h1>
             </div>  
           <div className='subtitle'>
-                {subtitle} 
+              <h2>  {subtitle} </h2>
          </div> 
         </div>
         )
