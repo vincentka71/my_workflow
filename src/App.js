@@ -18,7 +18,7 @@ function App() {
     return (
       <div>
       <Routes>
-        <Route path='/' element={<HomePage />} />
+        <Route path='/' element={<HomePage bgColor="blue" hoverBgColor="red"/>} />
         <Route path='/generalpage' element={<GeneralPage />} />
         <Route path='/zoomworkflow' element={<ZoomPage />} />
         <Route path='/workflowexplo' element={<ExploPage />} />
