@@ -18,25 +18,43 @@ h1{
     font-weight: bold;
     font-size: 3em;
 }
-@media only screen and (max-width: 320px) {
-    h1 {
-    font-size: 2em;
+
+/* If the screen size is 601px wide or more, set the font-size  */
+@media screen and (min-width: 601px) {
+    h1{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 3em;
     }
+    h2{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2em;
     }
+  }
+  
+  /* If the screen size is 600px wide or less, set the font-size */
+  @media screen and (max-width: 600px) {
+    h1{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2em;
+    }
+    h2{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1em;
+    }
+  }
+
+
 .subtitle {
     
     text-align: center;
     font-feature-settings: 'liga' off;
     color: #DDE3ED;
 }
-h2{
-    font-family: Lato;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 2em;
-}
-@media only screen and (max-width: 320px) {
-    h2 {
-    font-size: 1em;
-    }
-    }
