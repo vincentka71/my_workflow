@@ -23,7 +23,7 @@ const HomePage = () => {
     <Header title = {"De l'idée à la mise en service"} subtitle={"Espace de partage"} backgroundcolor = {"#DE6161"} />
     <div className="content">
       <HomeImage className="homepageimage" />
-      <Button type='submit' onClick={routeChange}> C'est parti ! </Button>
+      <Button type='submit' backgroundcolor = {"#FB7575"} onClick={routeChange} > C'est parti ! </Button>
     </div>
     <Footer text = {"De l'idée à la mise en service"} backgroundcolor = {"#DE6161"}/>
     </div>

@@ -12,5 +12,5 @@ const PopUp = ({content}, {handleClose}) => {
       </div>
     );
   };
-   
-  export default PopUp;
+
+export default PopUp;

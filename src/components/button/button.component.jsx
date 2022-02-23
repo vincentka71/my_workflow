@@ -2,8 +2,8 @@ import React from 'react';
 
 import './button.styles.css';
 
-const Button = ({ children, ...otherProps }) => (
-  <button className='button' {...otherProps}>
+const Button = ({ children, backgroundcolor }) => (
+  <button className='button' style={{backgroundColor: backgroundcolor}}>
     {children}
   </button>
 );
