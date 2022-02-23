@@ -1,27 +1,59 @@
 
 .header {
-    height: 168px;
+    height: 22%;
     width: 100%;
-    
+   
     /* background-color: #DE6161;  */ 
 }
-.title {
-    font-family: Lato;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 60px;
-    line-height: 70px;
+.title {  
     text-align: center;
     font-feature-settings: 'liga' off;
     color: #DDE3ED;
 } 
 
-.subtitle {
+h1{
     font-family: Lato;
     font-style: normal;
     font-weight: bold;
-    font-size: 52px;
-    line-height: 70px;
+    font-size: 3em;
+    margin-top: 0px;
+}
+
+/* If the screen size is 801px wide or more, set the font-size  */
+@media screen and (min-width: 801px) {
+    h1{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 4em;
+    }
+    h2{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2em;
+    }
+  }
+  
+  /* If the screen size is 800px wide or less, set the font-size */
+  @media screen and (max-width: 800px) {
+    h1{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2em;
+    }
+    h2{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1em;
+    }
+  }
+
+
+.subtitle {
+    
     text-align: center;
     font-feature-settings: 'liga' off;
     color: #DDE3ED;
