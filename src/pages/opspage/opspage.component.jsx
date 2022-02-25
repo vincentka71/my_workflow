@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 import "./opspage.styles.css";
@@ -11,9 +11,23 @@ import { ReactComponent as ZoomOps } from "../../assets/zoomops.svg";
 import { ReactComponent as Info } from "../../assets/information.svg";
 import { ReactComponent as GlassOut } from "../../assets/glassout.svg";
 
-const OpsPage = () => {
+const OpsPage = (props) => {
+  
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
+
+  const [buttonColor, setButtonColor] = useState();
+
+  useEffect(() => {
+    setButtonColor(props.bgColor);
+  }, [])
+
+  const enter = () => {
+    setButtonColor(props.hoverBgColor)
+  }
+  const leave = () => {
+    setButtonColor(props.bgColor)
+  }
 
   const togglePopup = () => {
     setIsOpen(!isOpen);
@@ -24,27 +38,21 @@ const OpsPage = () => {
     navigate(`/${path}`);
   };
 
-  const button_style = {
-    backgroundColor: "#6AB9B4",
-    fontFamily: "Lato",
-    fontStyle: "normal",
-    fontWeight: "normal",
-    fontSize: "18px",
-    lineHeight: "21px",
-    textAlign: "left",
-    "&:hover": {
-      background: "red",
-    },
-    "&:last-child": {
-      borderRight: "solid 1px #cccccc",
-    },
+  const routePreopspage = () => {
+    let path = "workflowpreops";
+    navigate(`/${path}`);
+  };
+
+  const button_preops_style = {
+    backgroundColor: buttonColor,
+    transform: 'rotate(0.75turn)',
   };
 
   return (
     <div className="opspage">
       <Header
         title={"Workflow"}
-        subtitle={"Phase Préopérationnelle "}
+        subtitle={"Phase Opérationnelle "}
         backgroundcolor={"#6AB9B4"}
       />
       <div className="content">
@@ -71,24 +79,21 @@ const OpsPage = () => {
             />
           )}
         </button>
-        <div className="preopsgeneral">
-          <button
-            className="glassout-preops"
-            type="submit"
-            onClick={routeGeneralworkflow}
-          >
-            <GlassOut className="glassout" />
-          </button>
-          <ZoomOps className="ops-image" />
-        </div>
-        <Button type="submit" style={button_style}>
+        <button
+          className="glassout-ops"
+          type="submit"
+          onClick={routeGeneralworkflow}
+        >
+          <GlassOut className="glassout" />
+        </button>
+        <ZoomOps className="ops-image" />
+        <Button id="preops" style={ button_preops_style } onMouseLeave={leave} onMouseEnter={enter} onClick={routePreopspage} >
         {" "}
-        Opérationnel{" "}
+        Pré-Opérationnel{" "}
       </Button>
       </div>
-
       <Footer
-        text={"Workflow - Partie Préopérationnelle"}
+        text={"Workflow - Partie Opérationnelle"}
         backgroundcolor={"#6AB9B4"}
       />
     </div>

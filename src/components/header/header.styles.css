@@ -1,60 +1,53 @@
-
-.header {
-    height: 22%;
-    width: 100%;
-   
-    /* background-color: #DE6161;  */ 
+.title {
+  text-align: center;
+  font-feature-settings: "liga" off;
+  color: #dde3ed;
 }
-.title {  
-    text-align: center;
-    font-feature-settings: 'liga' off;
-    color: #DDE3ED;
-} 
-
-h1{
-    font-family: Lato;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 3em;
-    margin-top: 0px;
-}
-
-/* If the screen size is 801px wide or more, set the font-size  */
-@media screen and (min-width: 801px) {
-    h1{
-        font-family: Lato;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 4em;
-    }
-    h2{
-        font-family: Lato;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 2em;
-    }
-  }
-  
-  /* If the screen size is 800px wide or less, set the font-size */
-  @media screen and (max-width: 800px) {
-    h1{
-        font-family: Lato;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 2em;
-    }
-    h2{
-        font-family: Lato;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 1em;
-    }
-  }
-
 
 .subtitle {
-    
-    text-align: center;
-    font-feature-settings: 'liga' off;
-    color: #DDE3ED;
+  text-align: center;
+  font-feature-settings: "liga" off;
+  color: #dde3ed;
+}
+
+h1 {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 0.3em;
+}
+
+h2 {
+  margin-top: auto;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+}
+
+/* If the screen size is 801px wide or more and height 781 or more, set the font-size  */
+@media screen and (min-width: 801px), (min-height: 781px) {
+  .header {
+    height: 18%;
+    width: 100%;
+  }
+  h1 {
+    font-size: 4em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+}
+
+/* If the screen size is 800px wide or less and height 780 or less, set the font-size */
+@media screen and (max-width: 800px), (max-height: 780px) {
+  .header {
+    height: 10%;
+    width: 100%;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1em;
+  }
 }

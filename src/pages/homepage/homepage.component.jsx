@@ -24,11 +24,9 @@ const HomePage = (props) => {
   }
   
   const enter = () => {
-    console.log("ici");
-    setButtonColor(props.hoverbgColor)
+    setButtonColor(props.hoverBgColor)
   }
   const leave = () => {
-    console.log("ici");
     setButtonColor(props.bgColor)
   }
   return (

@@ -18,15 +18,12 @@ function App() {
     return (
       <div>
       <Routes>
-        <Route path='/' element={<HomePage bgColor="blue" hoverBgColor="red"/>} />
+        <Route path='/' element={<HomePage bgColor="#FB7575" hoverBgColor="#FFA0A0"/>} />
         <Route path='/generalpage' element={<GeneralPage />} />
         <Route path='/zoomworkflow' element={<ZoomPage />} />
-        <Route path='/workflowexplo' element={<ExploPage />} />
-        <Route path='/workflowpreops' element={<PreopsPage />} />
-        <Route path='/workflowops' element={<OpsPage />} />
-        
-
-       { /* <Route path='/signin' element={SignInAndSignUpPage} /> */ }
+        <Route path='/workflowexplo' element={<ExploPage bgColor="#529793" hoverBgColor="#6AB9B4"/>} />
+        <Route path='/workflowpreops' element={<PreopsPage bgColor="#529793" hoverBgColor="#6AB9B4" />} />
+        <Route path='/workflowops' element={<OpsPage bgColor="#529793" hoverBgColor="#6AB9B4" />} />
       </Routes>
       </div>
     );

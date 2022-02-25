@@ -39,7 +39,7 @@ const GeneralPage = () => {
     let path = "workflowops";
     navigate(`/${path}`);
   };
-  
+
   return (
     <div className="generalpage">
       <Header
@@ -93,9 +93,7 @@ const GeneralPage = () => {
         >
           <GlassIn className="glassin" />
         </button>
-        <button 
-            className="glassin-ops" 
-                type="submit" onClick={routeOpspage}>
+        <button className="glassin-ops" type="submit" onClick={routeOpspage}>
           <GlassIn className="glassin" />
         </button>
       </div>
